@@ -33,6 +33,24 @@ export default function Home() {
       </div>
       <Section1 />
       <Section2 />
+      <div className="relative mx-auto flex h-[300px] w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16 mt-8">
+        <h2 className="text-4xl font-bold md:w-2/3 md:text-7xl">
+          Join our Team
+        </h2>
+        <p className="w-full text-base font-light">
+          Are you passionate about innovation and ready to make an impact? Join
+          our dynamic team of talented individuals who are dedicated to pushing
+          boundaries and shaping the future. We're committed to fostering a
+          collaborative environment where creativity thrives, and every voice is
+          heard. Whether you're a seasoned professional or just starting your
+          career journey, we welcome diversity and value fresh perspectives.
+          Explore our current opportunities and embark on a rewarding career
+          with us!
+        </p>
+        <Button className="rounded-full w-fit">
+          Join Our Team
+        </Button>
+      </div>
     </main>
   );
 }

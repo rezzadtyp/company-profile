@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar: React.FC = () => {
   return (
@@ -28,9 +36,24 @@ const Navbar: React.FC = () => {
           </Button>
         </div>
         <div className="block md:hidden">
-          <Button variant="ghost">
-            <Menu />
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost">
+                <Menu />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link href={"/about"}>About Us</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products"}>Products</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/teams"}>Our Teams</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </nav>

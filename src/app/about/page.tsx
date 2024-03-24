@@ -27,7 +27,7 @@ const About: React.FC = () => {
             CROT was born out of a shared passion for sustainability and a
             vision for a greener future. Founded in 2018, our journey began with
             a simple yet powerful idea: to revolutionize the way people power
-            their vehicles. Since then, we've embarked on a mission to make
+            their vehicles. Since then, we&apos;ve embarked on a mission to make
             electric vehicle (EV) charging as accessible and convenient as
             possible, laying the groundwork for a more sustainable
             transportation ecosystem.
@@ -53,9 +53,12 @@ const About: React.FC = () => {
         </div>
         <div className="relative flex h-fit w-full flex-col items-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 py-12 text-white md:px-16">
           <Culture />
-          <p>Our culture fosters a collaborative, inclusive environment where every voice is heard and valued. Together, we're building a company—and a world—we can be proud of.</p>
+          <p>
+            Our culture fosters a collaborative, inclusive environment where
+            every voice is heard and valued. Together, we&apos;re building a
+            company—and a world—we can be proud of.
+          </p>
         </div>
-
       </div>
     </main>
   );

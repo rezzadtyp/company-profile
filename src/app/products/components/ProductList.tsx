@@ -56,7 +56,7 @@ const ProductList = () => {
       </div>
       {productsB.map((e) => {
         return (
-          <div className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
+          <div key={e.id} className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
             <div className="relative h-40 w-40 overflow-hidden rounded-lg">
               <Image
                 src={e.image}
@@ -90,7 +90,7 @@ const ProductList = () => {
       </div>
       {productsH.map((e) => {
         return (
-          <div className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
+          <div key={e.id} className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
             <div className="relative h-40 w-40 overflow-hidden rounded-lg">
               <Image
                 src={e.image}

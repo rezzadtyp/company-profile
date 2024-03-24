@@ -105,7 +105,7 @@ const Teams: React.FC = () => {
           <Image src={imgUrl} alt="bg-header" objectFit="cover" fill />
         </div>
       </div>
-      <div className="mx-auto -mt-20 grid max-w-5xl grid-cols-2 md:grid-cols-3 gap-8 px-4 md:px-0">
+      <div className="mx-auto -mt-20 grid max-w-5xl grid-cols-2 gap-8 px-4 md:grid-cols-3 md:px-0">
         {elements}
       </div>
       <div className="relative mx-auto flex h-[300px] w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16">
@@ -115,16 +115,14 @@ const Teams: React.FC = () => {
         <p className="w-full text-base font-light">
           Are you passionate about innovation and ready to make an impact? Join
           our dynamic team of talented individuals who are dedicated to pushing
-          boundaries and shaping the future. We're committed to fostering a
+          boundaries and shaping the future. We&apos;re committed to fostering a
           collaborative environment where creativity thrives, and every voice is
-          heard. Whether you're a seasoned professional or just starting your
-          career journey, we welcome diversity and value fresh perspectives.
-          Explore our current opportunities and embark on a rewarding career
-          with us!
+          heard. Whether you&apos;re a seasoned professional or just starting
+          your career journey, we welcome diversity and value fresh
+          perspectives. Explore our current opportunities and embark on a
+          rewarding career with us!
         </p>
-        <Button className="rounded-full w-fit">
-          Join Our Team
-        </Button>
+        <Button className="w-fit rounded-full">Join Our Team</Button>
       </div>
     </main>
   );

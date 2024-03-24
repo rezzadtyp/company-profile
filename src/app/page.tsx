@@ -40,9 +40,9 @@ export default function Home() {
         <p className="w-full text-base font-light">
           Are you passionate about innovation and ready to make an impact? Join
           our dynamic team of talented individuals who are dedicated to pushing
-          boundaries and shaping the future. We're committed to fostering a
+          boundaries and shaping the future. We&apos;re committed to fostering a
           collaborative environment where creativity thrives, and every voice is
-          heard. Whether you're a seasoned professional or just starting your
+          heard. Whether you&apos;re a seasoned professional or just starting your
           career journey, we welcome diversity and value fresh perspectives.
           Explore our current opportunities and embark on a rewarding career
           with us!

@@ -73,7 +73,7 @@ const Teams: React.FC = () => {
         key={index}
         className="flex flex-col gap-2 overflow-hidden rounded-[20px] bg-black"
       >
-        <div className="relative mx-auto h-[25vh] w-full overflow-hidden">
+        <div className="relative mx-auto h-[20vh] md:h-[25vh] w-full overflow-hidden">
           <Image
             src={user.picture.large}
             alt="profile"
@@ -87,7 +87,7 @@ const Teams: React.FC = () => {
             {user.name.first} {user.name.last}
           </h1>
           <p className="text-lg">{teamMember.title}</p>
-          <p className="text-sm">{teamMember.description}</p>
+          <p className="text-sm line-clamp-2 md:line-clamp-none">{teamMember.description}</p>
         </div>
       </div>
     );
@@ -95,7 +95,7 @@ const Teams: React.FC = () => {
 
   return (
     <main className="mx-auto flex flex-col place-content-center gap-8">
-      <div className="relative h-[600px]">
+      <div className="relative h-[400px] md:h-[600px]">
         <div className="z-10 h-full place-content-center bg-black bg-opacity-40 text-center">
           <h1 className="mx-auto max-w-7xl text-center text-4xl font-semibold md:text-7xl">
             Meet the Experts Behind Your Seamless Experience
@@ -108,7 +108,7 @@ const Teams: React.FC = () => {
       <div className="mx-auto -mt-20 grid max-w-5xl grid-cols-2 gap-8 px-4 md:grid-cols-3 md:px-0">
         {elements}
       </div>
-      <div className="relative mx-auto flex h-[300px] w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16">
+      <div className="relative mx-auto flex h-fit p-8 w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16">
         <h2 className="text-4xl font-bold md:w-2/3 md:text-7xl">
           Join our Team
         </h2>

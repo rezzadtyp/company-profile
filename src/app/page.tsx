@@ -33,7 +33,7 @@ export default function Home() {
       </div>
       <Section1 />
       <Section2 />
-      <div className="relative mx-auto flex h-[300px] w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16 mt-8">
+      <div className="relative mx-auto flex h-fit p-8 w-full max-w-5xl flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 md:h-[400px] md:px-16 mt-8">
         <h2 className="text-4xl font-bold md:w-2/3 md:text-7xl">
           Join our Team
         </h2>

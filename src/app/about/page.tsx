@@ -9,7 +9,7 @@ const About: React.FC = () => {
 
   return (
     <main className="mx-auto flex flex-col place-content-center gap-8">
-      <div className="relative h-[600px]">
+      <div className="relative h-[300px] md:h-[600px]">
         <div className="z-10 h-full place-content-center bg-black bg-opacity-40 text-center">
           <h1 className="text-4xl font-semibold md:text-7xl">
             Empowering the
@@ -21,7 +21,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-8">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 md:px-0">
         <div className="relative flex h-fit w-full flex-col place-content-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 py-12 text-white md:px-16">
           <p>
             CROT was born out of a shared passion for sustainability and a

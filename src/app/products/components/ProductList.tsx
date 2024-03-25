@@ -52,11 +52,11 @@ const ProductList = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="relative flex h-fit w-full flex-col items-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 py-8 text-white md:px-16">
-        <h1 className="text-7xl">For Business</h1>
+        <h1 className="text-3xl md:text-7xl">For Business</h1>
       </div>
       {productsB.map((e) => {
         return (
-          <div key={e.id} className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
+          <div key={e.id} className="relative flex flex-col md:flex-row h-full w-full gap-8 rounded-[28px] bg-black p-6">
             <div className="relative h-40 w-40 overflow-hidden rounded-lg">
               <Image
                 src={e.image}
@@ -68,12 +68,12 @@ const ProductList = () => {
             </div>
             <div className="flex w-full flex-col gap-2">
               <h2 className="text-2xl font-semibold">{e.name}</h2>
-              <h4>{e.description}</h4>
+              <h3>{e.description}</h3>
               <hr />
               <p>{e.spec1}</p>
               <p>{e.spec2}</p>
             </div>
-            <div className="absolute bottom-8 right-8">
+            <div className="absolute md:bottom-8 right-8">
               <Button variant="ghost">
                 <span>Buy Now</span>
                 <span>
@@ -86,11 +86,11 @@ const ProductList = () => {
       })}
 
       <div className="relative flex h-fit w-full flex-col items-center gap-4 overflow-hidden rounded-[40px] bg-black px-8 py-8 text-white md:px-16">
-        <h1 className="text-7xl">For Homes</h1>
+        <h1 className="text-3xl md:text-7xl">For Homes</h1>
       </div>
       {productsH.map((e) => {
         return (
-          <div key={e.id} className="relative flex h-full w-full gap-8 rounded-[28px] bg-black p-6">
+          <div key={e.id} className="relative flex flex-col md:flex-row h-full w-full gap-8 rounded-[28px] bg-black p-6">
             <div className="relative h-40 w-40 overflow-hidden rounded-lg">
               <Image
                 src={e.image}
@@ -102,12 +102,12 @@ const ProductList = () => {
             </div>
             <div className="flex w-full flex-col gap-2">
               <h2 className="text-2xl font-semibold">{e.name}</h2>
-              <h4>{e.description}</h4>
+              <h3>{e.description}</h3>
               <hr />
               <p>{e.spec1}</p>
               <p>{e.spec2}</p>
             </div>
-            <div className="absolute bottom-8 right-8">
+            <div className="absolute md:bottom-8 right-8">
               <Button variant="ghost">
                 <span>Buy Now</span>
                 <span>

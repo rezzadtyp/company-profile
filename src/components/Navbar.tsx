@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         <div className="block md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost">
+              <Button variant="ghost" id="dropdown" aria-label="dropdown">
                 <Menu />
               </Button>
             </DropdownMenuTrigger>

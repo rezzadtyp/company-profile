@@ -22,7 +22,7 @@ const Culture = () => {
       {
         culture.map((value)=> {
           return (
-            <div key={value.id} className="grid grid-cols-4 mb-4">
+            <div key={value.id} className="grid md:grid-cols-4 mb-4">
               <div className="text-xl font-semibold">
                 {value.title}
               </div>
